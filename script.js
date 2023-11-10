@@ -49,20 +49,24 @@ function debounce(fn, t) {
 }
 
 //Exercise 4
+
+// //first solution
 function createMultiplier (multiplier) { //function that takes a multiplier as an arguement
   return function (number) { //inner function that takes a number as an arguement
     return number * multiplier; //multiplies arguements (number * multiplier)
   }
 }
-const multiplyByFive = createMultiplier(5);
-console.log(multiplyByFive(5));
 
-//ver 2
-//   let x = 5;
+const multiplyByFive = createMultiplier(5);
+console.log(multiplyByFive(5)); 
+
+// //second solution
+// let x = 5;
 // function createMultiplier(x){
 //   return x * 2;
 // }
 // console.log(createMultiplier(x));
+
 
 //Exercise 5
 
@@ -96,7 +100,7 @@ bookshelf.removeBook({title : "Pride and Prejudice"});
 console.log(bookshelf.getTotalBooks()); // 2
 bookshelf.logAllTitles();
 
-//Exercise 6 
+//Exercise 6
 
 function expect(val) {
   return {
@@ -108,19 +112,15 @@ function expect(val) {
     }
   };
 }
+
 //one
 const result1 = expect(5).toBe(5);
 console.log(result1);
+
 //two
 const result2 = expect(5).toBe(null);
 console.log(result2);
+
 //three
 const result3 = expect(5).notToBe(null);
 console.log(result3);
-
-
-
-
-
-
-
